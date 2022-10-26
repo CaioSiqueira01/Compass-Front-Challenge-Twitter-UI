@@ -1,1 +1,86 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.aside__left {
+  display: flex;
+  flex-direction: column;
+}
+.aside__left .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.aside__left .container .aside__left-logo {
+  margin-top: 11px;
+}
+.aside__left .container .aside__left-nav {
+  display: flex;
+  padding-top: 15px;
+}
+.aside__left .container .aside__left-nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.aside__left .container .aside__left-nav .nav__list .nav__list-item {
+  list-style-type: none;
+  padding-bottom: 30px;
+  display: flex;
+}
+.aside__left .container .aside__left-nav .nav__list .nav__list-item .link-icon {
+  padding-right: 20px;
+}
+.aside__left .container .aside__left-nav .nav__list .nav__list-item .item-link-active {
+  text-decoration: none;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #1DA1F2;
+  padding-top: 3px;
+}
+.aside__left .container .aside__left-nav .nav__list .nav__list-item .item-link {
+  text-decoration: none;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #0F1419;
+  padding-top: 3px;
+}
+.aside__left .container .aside__left-btn {
+  width: 228px;
+  height: 49px;
+  border-radius: 9999px;
+  border: none;
+  background-color: #1DA1F2;
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.aside__left .container .profile {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  padding-top: 60px;
+}
+.aside__left .container .profile .profile__picture {
+  border-radius: 100%;
+  padding-right: 10px;
+}
+.aside__left .container .profile .profile__acount h3, .aside__left .container .profile p {
+  margin: 0;
+  padding-right: 52px;
+}
+.aside__left .container .profile .profile__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F1419;
+}
+.aside__left .container .profile .profile__mail {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5B7083;
+}
+.aside__left .container .profile .profile__more {
+  height: 4.81px;
+}/*# sourceMappingURL=style.css.map */

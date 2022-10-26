@@ -1,0 +1,116 @@
+$primary-blue: #1DA1F2;
+$black: #0F1419;
+$white: #FFFFFF;
+$dark-1: #17202A;
+$dark-2: #1C2733;
+$dark-3: #283340;
+$dark-4: #3A444C;
+$dark-5: #5B7083;
+$dark-6: #8899A6;
+$dark-7: #EBEEF0;
+$dark-8: #F7F9FA;
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include reset();
+}
+
+.aside__left{
+    display: flex;
+    flex-direction: column;
+
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+
+        .aside__left-logo{
+            margin-top: 11px;
+        }
+
+        .aside__left-nav{
+            display: flex;
+            padding-top: 15px;
+
+            .nav__list{
+                display: flex;
+                flex-direction: column;
+                padding-inline-start: 0px;
+
+                .nav__list-item{
+                    list-style-type: none;
+                    padding-bottom: 30px;
+                    display: flex;
+
+                    .link-icon{
+                        padding-right: 20px;
+                    }
+
+                    .item-link-active{
+                        text-decoration: none;
+                        font-size: 1.1875rem;
+                        font-weight: 700;
+                        color: $primary-blue;
+                        padding-top: 3px;
+                    }
+
+                    .item-link{
+                        text-decoration: none;
+                        font-size: 1.1875rem;
+                        font-weight: 700;
+                        color: $black;
+                        padding-top: 3px;
+                    }
+                }
+            }
+        }
+
+        .aside__left-btn{
+            width: 228px;
+            height: 49px;
+            border-radius: 9999px;
+            border: none;
+            background-color: $primary-blue;
+            color: $white;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .profile{
+            display: flex;
+            align-items: center;
+            height: 69px;
+            padding-top: 60px;
+
+            .profile__picture{
+                border-radius: 100%;
+                padding-right: 10px;
+            }
+
+            .profile__acount h3, p{
+                margin: 0;
+                padding-right: 52px;
+            }
+
+            .profile__name{
+                font-size: 1rem;
+                font-weight: 700;
+                color: $black;
+            }
+
+            .profile__mail{
+                font-size: 1rem;
+                font-weight: 500;
+                color: $dark-5;
+            }
+
+            .profile__more{
+                height: 4.81px;
+            }
+        }
+    }
+}
