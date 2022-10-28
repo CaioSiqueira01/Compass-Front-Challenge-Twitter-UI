@@ -1,15 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .aside__left {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  left: 0;
+  width: 275px;
 }
 .aside__left .container {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0 88px;
 }
 .aside__left .container .aside__left-logo {
   margin-top: 11px;
@@ -44,7 +50,6 @@ body {
   font-size: 1.1875rem;
   font-weight: 700;
   color: #0F1419;
-  padding-top: 3px;
 }
 .aside__left .container .aside__left-btn {
   width: 228px;
@@ -61,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   height: 69px;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .aside__left .container .profile .profile__picture {
   border-radius: 100%;
@@ -85,11 +90,37 @@ body {
   height: 4.81px;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background: #FFFFFF;
+  width: 600px;
+  height: 861px;
+}
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 598px;
+  height: 53px;
+  position: fixed;
+  top: 0;
+}
+main header h2 {
+  font-weight: 700;
+  font-size: 1.118rem;
+  color: #0F1419;
+}
+
 footer {
   display: flex;
   width: 100%;
   background-color: #1DA1F2;
   height: 80px;
+  position: fixed;
+  bottom: 0;
 }
 footer .container__footer {
   width: 1000px;

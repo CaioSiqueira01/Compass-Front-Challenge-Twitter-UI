@@ -17,15 +17,21 @@ $dark-8: #F7F9FA;
 
 body {
     @include reset();
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .aside__left{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 275px;
 
     .container{
-        width: 1200px;
-        margin: 0 auto;
+        margin: 0 88px;
 
         .aside__left-logo{
             margin-top: 11px;
@@ -62,7 +68,6 @@ body {
                         font-size: 1.1875rem;
                         font-weight: 700;
                         color: $black;
-                        padding-top: 3px;
                     }
                 }
             }
@@ -84,7 +89,7 @@ body {
             display: flex;
             align-items: center;
             height: 69px;
-            padding-top: 60px;
+            padding-top: 20px;
 
             .profile__picture{
                 border-radius: 100%;
@@ -115,11 +120,39 @@ body {
     }
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: $white;
+    width: 600px;
+    height: 861px;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 598px;
+        height: 53px;
+        position: fixed;
+        top: 0;
+
+        h2{
+            font-weight: 700;
+            font-size: 1.118rem;
+            color: $black;
+        }
+    }
+}
+
 footer{
     display: flex;
     width: 100%;
     background-color: $primary-blue;
     height: 80px;
+    position: fixed;
+    bottom: 0;
 
     .container__footer{
         width: 1000px;
