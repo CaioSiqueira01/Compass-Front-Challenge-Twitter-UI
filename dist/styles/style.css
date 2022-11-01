@@ -113,6 +113,114 @@ main header h2 {
   font-size: 1.118rem;
   color: #0F1419;
 }
+main .main__border-Header {
+  position: fixed;
+  width: 42%;
+  height: 1px;
+  background-color: #EBEEF0;
+}
+main .post {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .post .post__input {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 53px;
+  background-color: var(--White);
+  width: 40%;
+}
+main .post .post__input img {
+  border-radius: 50%;
+  margin-right: 13px;
+}
+main .post .post__input input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+main .post .post__emoji {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 101px;
+  width: 42%;
+  background-color: #FFFFFF;
+}
+main .post .post__emoji .emojis {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .post .post__emoji button {
+  height: 39px;
+  width: 77px;
+  border-radius: 9999px;
+  background-color: #1DA1F2;
+  opacity: 0.5;
+  border: none;
+  outline: none;
+  font-size: 0.938rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+main .post .main__border {
+  width: 40%;
+  height: 1px;
+  background-color: #EBEEF0;
+}
+main .post .scroll {
+  position: fixed;
+  top: 160px;
+}
+main .post .margin {
+  margin-top: 90px;
+}
+main .post .post__tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 378px;
+}
+main .post .post__tweet figure {
+  height: 90%;
+  margin-right: 11px;
+}
+main .post .post__tweet figure img {
+  border-radius: 50%;
+}
+main .post .post__tweet .tweet__main {
+  display: flex;
+  flex-direction: column;
+}
+main .post .post__tweet .tweet__main .tweet__main-user {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+main .post .post__tweet .tweet__main .tweet__main-user h3 {
+  font-weight: 700;
+  color: #0F1419;
+}
+main .post .post__tweet .tweet__main .tweet__main-user h4, main .post .post__tweet .tweet__main .tweet__main-user .name__time {
+  font-weight: 500;
+}
+main .post .post__tweet .tweet__main .tweet__main-user .name__dot {
+  font-weight: 400;
+}
+main .post .post__tweet .tweet__main .tweet__main-user .name__nick, main .post .post__tweet .tweet__main .tweet__main-user .name__dot, main .post .post__tweet .tweet__main .tweet__main-user .name__time {
+  color: #5B7083;
+}
+main .post .post__tweet .tweet__main .tweet__main-user .name__text, main .post .post__tweet .tweet__main .tweet__main-user .name__nick, main .post .post__tweet .tweet__main .tweet__main-user .name__dot, main .post .post__tweet .tweet__main .tweet__main-user .name__time {
+  font-size: 0.938rem;
+  margin-right: 4px;
+}
 
 footer {
   display: flex;
